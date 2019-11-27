@@ -4,7 +4,7 @@ function myFunction() {
 }          
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    if(window.location.pathname == "/index.html") {
+    if(window.location.pathname.indexOf("/index.html")==39) {
         document.getElementById("home-page").style.display = "block";
     }
     else if (window.matchMedia("(max-width: 720px)").matches) {

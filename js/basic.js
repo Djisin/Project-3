@@ -4,14 +4,13 @@ function myFunction() {
 }          
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    if(window.location.pathname.indexOf("/index.html")==39) {
+    if(window.location.pathname == "/Project-3/index.html") {
         document.getElementById("home-page").style.display = "block";
     }
     else if (window.matchMedia("(max-width: 720px)").matches) {
         document.getElementById("container").style.display = "flex";
     }
     else{
-        
         document.getElementById("container").style.display = "grid";
     }
 }

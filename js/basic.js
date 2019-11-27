@@ -4,7 +4,8 @@ function myFunction() {
 }          
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    if(window.location.pathname == "/Project-3/index.html") {
+    if(window.location.pathname == "/index.html") {
+                                //"/Project-3/index.html" for GitHub
         document.getElementById("home-page").style.display = "block";
     }
     else if (window.matchMedia("(max-width: 720px)").matches) {

@@ -385,20 +385,6 @@ ul#menu a:hover > .menu-tip {
   background: #f9f7f7;
 }
 
-.pulse-ring {
-  width: 180px;
-  height: 180px;
-  border: 2px solid #f9f7f7;
-  background-color: #f9f7f7;
-  border-radius: 50%;
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 80px;
-  -webkit-animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
-          animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
-  z-index: -1;
-}
-
 #menu, .menu-item {
   -webkit-filter: url("#goo");
           filter: url("#goo");
@@ -635,6 +621,17 @@ footer {
   padding-left: 20px;
 }
 
+body#centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin: 0;
+}
+
 #home-page-pic {
   height: 400px;
   position: absolute;
@@ -667,6 +664,9 @@ footer {
 }
 
 #home-page {
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: none;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50px;
@@ -750,7 +750,6 @@ footer {
 }
 
 #education {
-  display: block;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 5fr;
@@ -879,6 +878,7 @@ footer {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   z-index: 5;
+  cursor: pointer;
 }
 
 .project img:hover {

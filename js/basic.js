@@ -4,7 +4,7 @@ function myFunction() {
 }          
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    if(window.location.pathname == "Project-3/index.html") {
+    if(window.location.pathname == "/index.html") {
         document.getElementById("home-page").style.display = "block";
     }
     else if (window.matchMedia("(max-width: 720px)").matches) {

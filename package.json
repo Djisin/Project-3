@@ -1,0 +1,14 @@
+{
+  "name": "vsc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/style.scss:./css/style.css ./sass/mobile/scss:./css/mobile.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "browserslist": "last 4 versions"
+}
